@@ -11,6 +11,7 @@ import MembershipPage from "./pages/MembershipPage";
 import AboutPage from "./pages/AboutPage";
 import ContactPage from "./pages/ContactPage";
 import NotFound from "./pages/NotFound";
+import CareersPage  from "./pages/CareersPage";
 
 export default function App() {
   const [loading, setLoading] = useState(true);
@@ -49,6 +50,7 @@ export default function App() {
                 <Route path="/membership" element={<MembershipPage />} />
                 <Route path="/about" element={<AboutPage />} />
                 <Route path="/contact" element={<ContactPage />} />
+                <Route path="/careers" element={<CareersPage />} />
                 <Route path="*" element={<NotFound />} />
               </Routes>
             </motion.div>

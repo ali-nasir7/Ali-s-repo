@@ -44,29 +44,27 @@ export default function Navbar() {
         }`}
       >
         <div className="mx-auto max-w-[1440px] px-6 md:px-10 lg:px-16 h-20 flex items-center justify-between">
-          {/* Logo */}
-          <Link to="/" className="flex items-center gap-3 group">
-            <img
-              src="/resources/logo.png"
-              alt="LivLong MD"
-              className="h-9 w-auto object-contain"
-              onError={(e) => {
-                // graceful fallback if the manual image isn't placed yet
-                e.currentTarget.style.display = "none";
-                e.currentTarget.nextSibling.style.display = "flex";
-              }}
-            />
-            <div
-              className="hidden flex-col leading-tight"
-              aria-hidden="true"
-            >
-              <span className="text-charcoal tracking-tightest font-semibold text-[15px]">
-                LivLong MD
-              </span>
-              <span className="label text-[9px] text-eucalyptus mt-0.5">
-                Live Well Long
-              </span>
-            </div>
+  {/* Logo */}
+  <Link to="/" className="flex items-center gap-3 group">
+    <img
+      src="/resources/logo.png"
+      alt="LivLong MD"
+      className="h-10 w-auto object-contain"
+      onError={(e) => {
+        e.currentTarget.style.display = "none";
+      }}
+    />
+
+    {/* Company Name + Tagline */}
+    <div className="flex flex-col leading-tight">
+      <span className="text-charcoal tracking-tightest font-semibold text-[15px] md:text-[16px]">
+        LivLong MD
+      </span>
+
+      <span className="label text-[9px] md:text-[10px] text-eucalyptus mt-0.5">
+        Live Well Long
+      </span>
+    </div>
           </Link>
 
           {/* Desktop nav */}

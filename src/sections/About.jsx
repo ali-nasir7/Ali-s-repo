@@ -132,7 +132,7 @@ function PhotoFrame({ person }) {
         }}
       />
       <div className="absolute inset-0 flex flex-col items-center justify-center text-charcoal/70">
-        <div className="label">Portrait</div>
+        <div className="label"></div>
         <div className="mt-3 text-2xl tracking-tightest font-medium text-charcoal">
           {person.name.split(",")[0]}
         </div>

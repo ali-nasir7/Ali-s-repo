@@ -5,8 +5,8 @@ export default {
     extend: {
       colors: {
         ice: "#F4F7F9",
-        eucalyptus: "#7A9D96",
-        eucalyptusDark: "#5F857E",
+        brandGold: "#C9A35A",
+        brandBronze: "#6B3F1D",
         mist: "#D1DBE0",
         charcoal: "#2F3E46",
         charcoalSoft: "#354F52",

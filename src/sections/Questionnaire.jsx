@@ -110,8 +110,7 @@ export default function Questionnaire() {
             A protocol shaped to you.
           </h2>
           <p className="mt-5 text-body max-w-xl mx-auto leading-relaxed">
-            Answer a few brief questions. Our system will quietly recommend the
-            single protocol best suited to your moment.
+           Answer a few brief questions. Our system will recommend the right protocol based on your health profile and goals.
           </p>
         </div>
 

@@ -12,7 +12,7 @@ export default function ContactSection() {
           <div className="lg:col-span-5">
             <div className="label text-eucalyptus mb-5">Contact</div>
             <h2 className="text-4xl md:text-6xl tracking-tightest font-medium text-charcoal leading-[1.05]">
-              Begin a quiet
+              Let's start a 
               <br />
               conversation.
             </h2>

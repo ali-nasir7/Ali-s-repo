@@ -20,12 +20,10 @@ export default function AboutPage() {
           >
             <div className="label text-eucalyptus mb-5">About</div>
             <h1 className="text-5xl md:text-7xl tracking-tightest font-medium text-charcoal leading-[1.02]">
-              Where clinical depth meets quiet luxury.
+              Medicine practiced with precision and care.
             </h1>
             <p className="mt-8 text-body text-lg leading-relaxed max-w-2xl">
-              LivLong MD was founded on a single belief: that exceptional
-              medicine should feel as deeply considered as it is rigorously
-              practiced.
+              LivLong MD was founded on a single belief: that every patient deserves evidence-based medicine, delivered with the attention it requires
             </p>
           </motion.div>
         </div>

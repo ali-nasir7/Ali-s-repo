@@ -1,188 +1,3 @@
-// import { useState } from "react";
-// import { motion, AnimatePresence } from "framer-motion";
-// import { Plus, Minus, ArrowUpRight } from "lucide-react";
-// import Button from "../components/Button";
-// import { SERVICES } from "../lib/services";
-// import { openBooking } from "../lib/utils";
-
-// export default function ServicesShowcase() {
-//   return (
-//     <section id="services" className="relative scroll-mt-24">
-//       <div className="mx-auto max-w-[1440px] px-6 md:px-10 lg:px-16 py-24 md:py-32">
-//         <div className="grid md:grid-cols-12 gap-10 mb-20">
-//           <div className="md:col-span-5">
-//             <div className="label text-eucalyptus mb-5">Practice</div>
-//             <h2 className="text-4xl md:text-6xl tracking-tightest font-medium text-charcoal leading-[1.05]">
-//               IV Therapy,
-//               <br />
-//               elevated.
-//             </h2>
-//           </div>
-//           <div className="md:col-span-6 md:col-start-7 flex items-end">
-//             <p className="text-body leading-relaxed text-base md:text-lg max-w-xl">
-//               Three signature pillars of cellular care — each curated by our
-//               physicians and tailored to your biology. Every protocol is
-//               delivered in private, with concierge attention to detail.
-//             </p>
-//           </div>
-//         </div>
-
-//         <div className="space-y-4">
-//           {SERVICES.map((s, i) => (
-//             <ServiceRow key={s.id} service={s} defaultOpen={i === 0} />
-//           ))}
-//         </div>
-//       </div>
-//     </section>
-//   );
-// }
-
-// function ServiceRow({ service, defaultOpen }) {
-//   const [open, setOpen] = useState(defaultOpen);
-
-//   return (
-//     <motion.div
-//       initial={{ opacity: 0, y: 18 }}
-//       whileInView={{ opacity: 1, y: 0 }}
-//       viewport={{ once: true, margin: "-80px" }}
-//       transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
-//       className={`relative overflow-hidden rounded-3xl border transition-all duration-700 ease-luxe ${
-//         open
-//           ? "bg-white/40 border-charcoal/15 shadow-glass"
-//           : "bg-white/15 border-charcoal/10 hover:bg-white/30"
-//       }`}
-//     >
-//       <button
-//         onClick={() => setOpen((o) => !o)}
-//         className="w-full text-left px-6 md:px-12 py-8 md:py-10 flex items-start md:items-center gap-6 md:gap-12"
-//       >
-//         <div className="text-eucalyptus tracking-tight font-light text-2xl md:text-3xl shrink-0 w-12">
-//           {service.number}
-//         </div>
-//         <div className="flex-1 min-w-0">
-//           <h3 className="text-xl md:text-3xl tracking-tightest font-medium text-charcoal leading-snug">
-//             {service.title}
-//           </h3>
-//           <p className="mt-2 text-sm md:text-[15px] text-body max-w-2xl">
-//             {service.summary}
-//           </p>
-//         </div>
-//         <div className="shrink-0 w-10 h-10 rounded-full border border-charcoal/20 flex items-center justify-center text-charcoal">
-//           {open ? (
-//             <Minus size={16} strokeWidth={1.4} />
-//           ) : (
-//             <Plus size={16} strokeWidth={1.4} />
-//           )}
-//         </div>
-//       </button>
-
-//       <AnimatePresence initial={false}>
-//         {open && (
-//           <motion.div
-//             key="content"
-//             initial={{ height: 0, opacity: 0 }}
-//             animate={{ height: "auto", opacity: 1 }}
-//             exit={{ height: 0, opacity: 0 }}
-//             transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
-//             className="overflow-hidden"
-//           >
-//             <div className="px-6 md:px-12 pb-10 md:pb-14">
-//               <div className="hairline mb-10" />
-//               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
-//                 {service.children.map((child, idx) => (
-//                   <motion.div
-//                     key={child.id}
-//                     initial={{ opacity: 0, y: 12 }}
-//                     animate={{ opacity: 1, y: 0 }}
-//                     transition={{
-//                       duration: 0.7,
-//                       delay: idx * 0.06,
-//                       ease: [0.22, 1, 0.36, 1],
-//                     }}
-//                     className="group relative glass p-7 hover:bg-white/55 transition-all duration-500 ease-luxe"
-//                   >
-//                     <div className="label text-charcoal/40 mb-4">
-//                       {service.id === "addons"
-//                         ? "Add-On"
-//                         : service.id === "shots"
-//                         ? "Booster"
-//                         : "Protocol"}
-//                     </div>
-//                     <h4 className="text-lg md:text-xl text-charcoal tracking-tight font-medium leading-snug">
-//                       {child.title}
-//                     </h4>
-//                     <p className="mt-3 text-sm text-body leading-relaxed">
-//                       {child.description}
-//                     </p>
-
-//                     <div className="mt-7 flex items-center justify-between">
-//                       <div className="text-[11px] text-charcoal/40 tracking-tight">
-//                         Concierge delivery
-//                       </div>
-//                       <button
-//                         onClick={openBooking}
-//                         className="inline-flex items-center gap-1.5 text-[12px] font-medium text-charcoal hover:text-eucalyptus transition-colors"
-//                       >
-//                         Book
-//                         <ArrowUpRight size={14} strokeWidth={1.5} />
-//                       </button>
-//                     </div>
-
-//                     {/* Subtle DNA / pulse watermark on hover */}
-//                     <svg
-//                       aria-hidden
-//                       className="absolute right-3 bottom-3 opacity-0 group-hover:opacity-100 transition-opacity duration-700 ease-luxe"
-//                       width="60"
-//                       height="20"
-//                       viewBox="0 0 60 20"
-//                       fill="none"
-//                     >
-//                       <path
-//                         d="M0 10 H10 L14 4 L20 16 L26 6 L32 14 L36 10 H60"
-//                         stroke="#7A9D96"
-//                         strokeOpacity="0.35"
-//                         strokeWidth="1"
-//                         fill="none"
-//                       />
-//                     </svg>
-//                   </motion.div>
-//                 ))}
-//               </div>
-
-//               <div className="mt-10 flex justify-end">
-//                 <Button variant="primary" size="md" onClick={openBooking}>
-//                   Book this experience
-//                   <ArrowUpRight size={14} strokeWidth={1.5} />
-//                 </Button>
-//               </div>
-//             </div>
-//           </motion.div>
-//         )}
-//       </AnimatePresence>
-//     </motion.div>
-//   );
-// }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// sections/ServicesShowcase.jsx
-
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Plus, Minus, ArrowUpRight } from "lucide-react";
@@ -365,3 +180,19 @@ function ServiceRow({ service, defaultOpen }) {
     </motion.div>
   );
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

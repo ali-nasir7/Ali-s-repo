@@ -75,7 +75,7 @@ export default function ContactPage() {
 
   return (
     <>
-      {/* Page Hero */}
+      {/* Page Hero
       <section className="pt-40 md:pt-48 pb-8">
         <div className="mx-auto max-w-[1440px] px-6 md:px-10 lg:px-16">
           <motion.div
@@ -94,7 +94,7 @@ export default function ContactPage() {
             </p>
           </motion.div>
         </div>
-      </section>
+      </section> */}
 
       {/* Contact Details */}
       <ContactSection />

@@ -155,9 +155,9 @@ export default function Hero() {
                 duration: 0.9,
                 ease: [0.22, 1, 0.36, 1],
               }}
-              className="label inline-flex items-center gap-3 mb-8"
+              className="inline-flex items-center gap-3 mb-8 text-brandGold"
             >
-              <span className="h-px w-8 bg-eucalyptus" />
+              <span className="h-px w-8 bg-brandGold" />
               Concierge Longevity · Scottsdale
             </motion.div>
 
@@ -186,9 +186,7 @@ export default function Hero() {
               }}
               className="mt-8 max-w-xl text-base md:text-lg text-body leading-relaxed"
             >
-              Personalized IV Therapy, hormone optimization, and
-              advanced wellness care designed to help you restore
-              energy, improve recovery, and support long-term health.
+              Concierge, physician-led longevity care focused on optimizing energy, performance, and biological age.
             </motion.p>
 
             <motion.div

@@ -4,7 +4,11 @@
 
 :root {
   --ice: #f4f7f9;
-  --eucalyptus: #7a9d96;
+
+  /* GREEN REPLACED WITH BRAND GOLD */
+  --eucalyptus: #C9A35A;
+  --brand-gold: #C9A35A;
+
   --mist: #d1dbe0;
   --charcoal: #2f3e46;
   --charcoal-soft: #354f52;
@@ -34,7 +38,7 @@ body {
 }
 
 ::selection {
-  background: rgba(122, 157, 150, 0.25);
+  background: rgba(201, 163, 90, 0.25);
   color: var(--charcoal);
 }
 
@@ -45,6 +49,7 @@ h1 {
   letter-spacing: -0.03em;
   line-height: 1.05;
 }
+
 h2,
 h3 {
   color: var(--ink);
@@ -62,7 +67,7 @@ h3 {
   border-top: 1.5px solid rgba(255, 255, 255, 0.8);
   border-left: 1.5px solid rgba(255, 255, 255, 0.8);
   box-shadow: 0 40px 80px -15px rgba(47, 62, 70, 0.08),
-    0 0 20px rgba(122, 157, 150, 0.05);
+    0 0 20px rgba(201, 163, 90, 0.05);
   border-radius: 24px;
 }
 
@@ -74,7 +79,7 @@ h3 {
   border-top: 1.5px solid rgba(255, 255, 255, 0.85);
   border-left: 1.5px solid rgba(255, 255, 255, 0.85);
   box-shadow: 0 40px 80px -15px rgba(47, 62, 70, 0.08),
-    0 0 20px rgba(122, 157, 150, 0.05);
+    0 0 20px rgba(201, 163, 90, 0.05);
   border-radius: 24px;
 }
 

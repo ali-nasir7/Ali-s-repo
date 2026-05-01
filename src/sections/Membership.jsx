@@ -51,15 +51,14 @@ export default function Membership() {
           <div className="md:col-span-5">
             <div className="label text-eucalyptus mb-5">Membership</div>
             <h2 className="text-4xl md:text-6xl tracking-tightest font-medium text-charcoal leading-[1.05]">
-              An invitation, not
-              <br />a transaction.
+              A commitment to your .
+              <br />a health.
             </h2>
           </div>
           <div className="md:col-span-6 md:col-start-7 flex items-end">
             <p className="text-body leading-relaxed text-base md:text-lg max-w-xl">
               Membership at LivLong MD is a private commitment between you and
-              our physicians — a continuous, evolving relationship built on
-              data, discretion, and care.
+              our physicians — continuous, evolving care built on data, results, and trust..
             </p>
           </div>
         </div>

@@ -45,14 +45,14 @@ export default function Navbar() {
       >
         <div className="mx-auto max-w-[1440px] px-6 md:px-10 lg:px-16 h-20 flex items-center justify-between">
   {/* Logo */}
-  <Link to="/" className="flex items-center gap-3 group">
-    <img
-      src="/resources/logo.png"
-      alt="LivLong MD"
-      className="h-10 w-auto object-contain"
-      onError={(e) => {
-        e.currentTarget.style.display = "none";
-      }}
+<Link to="/" className="flex items-center gap-2 group">
+  <img
+    src="/resources/logo.png"
+    alt="LivLong MD"
+    className="h-10 w-auto object-cover scale-110" 
+    onError={(e) => {
+      e.currentTarget.style.display = "none";
+    }}
     />
 
     {/* Company Name + Tagline */}
@@ -61,7 +61,7 @@ export default function Navbar() {
         LivLong MD
       </span>
 
-      <span className="label text-[9px] md:text-[10px] text-eucalyptus mt-0.5">
+      <span className="label text-[9px] md:text-[10px] !text-brandGold mt-0.5">
         Live Well Long
       </span>
     </div>
@@ -85,7 +85,7 @@ export default function Navbar() {
                   <>
                     {l.label}
                     <span
-                      className={`absolute -bottom-1 left-0 h-px bg-eucalyptus transition-all duration-500 ease-luxe ${
+                      className={`absolute -bottom-1 left-0 h-px !bg-brandGold transition-all duration-500 ease-luxe ${
                         isActive ? "w-full" : "w-0"
                       }`}
                     />

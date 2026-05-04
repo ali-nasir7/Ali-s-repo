@@ -51,8 +51,7 @@ export default function Membership() {
           <div className="md:col-span-5">
             <div className="label text-eucalyptus mb-5">Membership</div>
             <h2 className="text-4xl md:text-6xl tracking-tightest font-medium text-charcoal leading-[1.05]">
-              A commitment to your .
-              <br />a health.
+              A commitment to your health.
             </h2>
           </div>
           <div className="md:col-span-6 md:col-start-7 flex items-end">

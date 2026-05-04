@@ -24,7 +24,7 @@ export default function MarqueeBanner() {
         style={{ display: 'flex', whiteSpace: 'nowrap' }}
         animate={{ x: ['0%', '-50%'] }}
         transition={{
-          duration: 30,
+          duration: 15,
           ease: 'linear',
           repeat: Infinity,
         }}

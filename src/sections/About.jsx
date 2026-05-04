@@ -32,7 +32,7 @@ export default function About() {
         <div className="max-w-2xl mb-20">
           <div className="label text-eucalyptus mb-5">The Practitioners</div>
           <h2 className="text-4xl md:text-6xl tracking-tightest font-medium text-charcoal leading-[1.05]">
-            Quiet authority.
+            Trusted authority
             <br />
             Profound care.
           </h2>

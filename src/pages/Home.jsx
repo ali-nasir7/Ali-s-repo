@@ -7,6 +7,7 @@ import Testimonials from "../sections/Testimonials";
 import ContactSection from "../sections/ContactSection";
 import usePageMeta from "../hooks/usePageMeta";
 
+
 export default function Home() {
   usePageMeta({
     title: "LivLong MD — Concierge Longevity & Wellness | Scottsdale",
@@ -15,6 +16,7 @@ export default function Home() {
   });
   return (
     <>
+
       <Hero />
       <ServicesShowcase />
       <Questionnaire />

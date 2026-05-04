@@ -17,9 +17,9 @@ export default function ServicesShowcase() {
             <div className="label text-eucalyptus mb-5">Practice</div>
 
             <h2 className="text-4xl md:text-6xl tracking-tightest font-medium text-charcoal leading-[1.05]">
-              IV Therapy,
-              <br />
-              elevated.
+              IV Therapy, elevated
+              {/* <br />
+              elevated. */}
             </h2>
 
             <p className="mt-8 text-body leading-relaxed text-base md:text-lg max-w-xl">

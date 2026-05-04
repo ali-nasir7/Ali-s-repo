@@ -4,8 +4,21 @@ import { CONTACT } from '../lib/constants'
 
 const roles = [
   {
+    title: 'Registered Nurse (RN)',
+    type: 'Part-Time / PRN',
+    tag: 'Clinical',
+    description:
+      'Deliver high-touch patient care through IV therapy and clinical support in a concierge setting. Experience in wellness, functional, or longevity medicine is a plus.',
+    responsibilities: [
+      'Administer IV therapy and monitor patients',
+      'Support clinical team with treatments and protocols',
+      'Maintain accurate patient records and documentation',
+      'Ensure a premium, patient-first experience',
+    ],
+  },
+  {
     title: 'Physician Assistant',
-    type: 'Full-Time',
+    type: 'Part-Time / PRN',
     tag: 'Clinical',
     description:
       'Work directly with patients on diagnostics, protocol design, and ongoing optimization. Background in longevity, functional, or regenerative medicine preferred.',
@@ -18,7 +31,7 @@ const roles = [
   },
   {
     title: 'Nurse Practitioner',
-    type: 'Full-Time',
+    type: 'Part-Time / PRN',
     tag: 'Clinical',
     description:
       'A role where your clinical judgment is trusted and your patient relationships are long-term. Experience in functional, regenerative, or longevity medicine preferred.',

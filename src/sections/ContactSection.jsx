@@ -3,6 +3,7 @@ import { Mail, Phone, MapPin, Clock, ArrowUpRight } from "lucide-react";
 import Button from "../components/Button";
 import { CONTACT } from "../lib/constants";
 import { openBooking } from "../lib/utils";
+import { BOOKING_URL } from "../lib/constants";
 
 export default function ContactSection() {
   return (
@@ -42,7 +43,7 @@ get you started
             </div>
 
             <div className="mt-12">
-              <Button variant="primary" size="lg" onClick={openBooking}>
+              <Button variant="primary" size="lg" onClick={() => openBooking(BOOKING_URL)}>
                 Book Appointment
                 <ArrowUpRight size={14} strokeWidth={1.5} />
               </Button>

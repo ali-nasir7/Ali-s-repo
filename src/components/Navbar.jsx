@@ -5,6 +5,7 @@ import { Menu, X } from "lucide-react";
 import Button from "./Button";
 import { NAV_LINKS } from "../lib/constants";
 import { openBooking } from "../lib/utils";
+import { BOOKING_URL } from "../lib/constants";
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -101,7 +102,7 @@ export default function Navbar() {
               variant="primary"
               size="md"
               className="hidden md:inline-flex"
-              onClick={openBooking}
+              onClick={() => openBooking(BOOKING_URL)}
             >
               Book Appointment
             </Button>

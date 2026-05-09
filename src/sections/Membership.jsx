@@ -1,8 +1,8 @@
 import { motion } from "framer-motion";
 import { Check, ArrowUpRight } from "lucide-react";
 import Button from "../components/Button";
+import { MEMBERSHIP_URL } from "../lib/constants";
 import { openBooking } from "../lib/utils";
-
 const TIERS = [
   {
     name: "Basic",
@@ -49,7 +49,7 @@ export default function Membership() {
       <div className="mx-auto max-w-[1440px] px-6 md:px-10 lg:px-16 py-24 md:py-32">
         <div className="grid md:grid-cols-12 gap-10 mb-20">
           <div className="md:col-span-5">
-            <div className="label text-eucalyptus mb-5">Membership</div>
+            <div className="label text-eucalyptus !text-xl mb-5">Membership</div>
             <h2 className="text-4xl md:text-6xl tracking-tightest font-medium text-charcoal leading-[1.05]">
               A commitment to your health.
             </h2>
@@ -131,7 +131,7 @@ export default function Membership() {
                 <Button
                   variant={t.featured ? "dark" : "primary"}
                   size="md"
-                  onClick={openBooking}
+                  onClick={() => openBooking(MEMBERSHIP_URL)}
                   className="w-full"
                 >
                   {t.cta}

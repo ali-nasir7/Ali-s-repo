@@ -18,7 +18,7 @@ export default function AboutPage() {
             transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
             className="max-w-3xl"
           >
-            <div className="label text-eucalyptus mb-5">About</div>
+            <div className="label text-eucalyptus  !text-xl mb-5">About</div>
             <h1 className="text-5xl md:text-7xl tracking-tightest font-medium text-charcoal leading-[1.02]">
               Medicine practiced with precision and care.
             </h1>

@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Plus, Minus, ArrowUpRight } from "lucide-react";
+import { QUICK_SHOT_URL } from "../lib/constants";
 import Button from "../components/Button";
 import { SERVICES } from "../lib/services";
 import { openBooking } from "../lib/utils";
@@ -14,7 +15,7 @@ export default function ServicesShowcase() {
         {/* TOP SECTION → only one image here */}
         <div className="grid lg:grid-cols-12 gap-10 lg:gap-16 items-center mb-20">
           <div className="lg:col-span-7">
-            <div className="label text-eucalyptus mb-5">Practice</div>
+            <div className="label text-eucalyptus !text-xl mb-5">Practice</div>
 
             <h2 className="text-4xl md:text-6xl tracking-tightest font-medium text-charcoal leading-[1.05]">
               IV Therapy, elevated
@@ -131,12 +132,12 @@ function ServiceRow({ service, defaultOpen }) {
                     className="group relative glass p-7 hover:bg-white/55 transition-all duration-500 ease-luxe"
                   >
                     <div className="label text-charcoal/40 mb-4">
-                      {service.id === "addons"
-                        ? "Add-On"
-                        : service.id === "shots"
-                        ? "Booster"
-                        : "Protocol"}
-                    </div>
+  {service.id === "addons"
+    ? "Add-On"
+    : service.id === "shots"
+    ? "Booster"
+    : ""}
+</div>
 
                     <h4 className="text-lg md:text-xl text-charcoal tracking-tight font-medium leading-snug">
                       {child.title}
@@ -148,11 +149,15 @@ function ServiceRow({ service, defaultOpen }) {
 
                     <div className="mt-7 flex items-center justify-between">
                       <div className="text-[11px] text-charcoal/40 tracking-tight">
-                        Concierge delivery
+                        
                       </div>
 
                       <button
-                        onClick={openBooking}
+                       onClick={() =>
+  openBooking(
+    service.id === "shots" ? QUICK_SHOT_URL : undefined
+  )
+}
                         className="inline-flex items-center gap-1.5 text-[12px] font-medium text-charcoal hover:text-eucalyptus transition-colors"
                       >
                         Book
@@ -167,9 +172,13 @@ function ServiceRow({ service, defaultOpen }) {
                 <Button
                   variant="primary"
                   size="md"
-                  onClick={openBooking}
+                  onClick={() =>
+  openBooking(
+    service.id === "shots" ? QUICK_SHOT_URL : undefined
+  )
+}
                 >
-                  Book this experience
+                  Book appointment
                   <ArrowUpRight size={14} strokeWidth={1.5} />
                 </Button>
               </div>

@@ -34,8 +34,9 @@ export const SERVICES = [
   {
     id: "addons",
     number: "02",
-    title: "Retail Vitamin Add-Ons",
-    summary: "Customize your drip. Curated micronutrient enhancements.",
+    title: " Vitamins Add-Ons",
+    summary: `Customize your drip and curate with micronutrient
+enhancements`,
     children: [
       { id: "vitamin-c", title: "Vitamin C", description: "Antioxidant + immune support." },
       { id: "vitamin-b", title: "Vitamin B-Complex", description: "Cellular energy + metabolic balance." },
@@ -52,21 +53,23 @@ export const SERVICES = [
     id: "shots",
     number: "03",
     title: "Quick-Stop Booster Shots",
-    summary: "Concentrated single-shot protocols for the optimized life.",
+    summary: "Concentrated single-shot therapies for the optimized health.",
     children: [
+      {
+        id: "nad",
+        title: "NAD+ Booster",
+        description:
+          `Miracle Molecule for DNA repair, brain fog and
+anti-aging`,
+        good_for: ["longevity", "cognition", "performance"],
+      },
       {
         id: "b12",
         title: "B12 Energy Shot",
         description: "Sustained, clean energy without the crash.",
         good_for: ["energy", "fatigue"],
       },
-      {
-        id: "nad",
-        title: "NAD+ Booster",
-        description:
-          "Cellular regeneration and mitochondrial repair — the cornerstone of longevity.",
-        good_for: ["longevity", "cognition", "performance"],
-      },
+      
       {
         id: "glutathione-push",
         title: "Glutathione Glow Push",

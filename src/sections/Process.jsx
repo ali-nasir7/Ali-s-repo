@@ -61,7 +61,7 @@ export default function Process() {
       <div className="container-lux max-w-6xl mx-auto px-4 md:px-8">
 
         {/* Heading alignment fixed */}
-        <div className="text-center md:text-left">
+        <div className="text-center md:text-left !text-xl">
           <SectionHeading
             eyebrow="The Process"
             title="Six movements toward a longer, fuller life."

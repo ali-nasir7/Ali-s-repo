@@ -10,15 +10,15 @@ export default function ContactSection() {
       <div className="mx-auto max-w-[1440px] px-6 md:px-10 lg:px-16 py-24 md:py-32">
         <div className="grid lg:grid-cols-12 gap-10 lg:gap-16">
           <div className="lg:col-span-5">
-            <div className="label text-eucalyptus mb-5">Contact</div>
+            <div className="label text-eucalyptus !text-xl mb-5">Contact</div>
             <h2 className="text-4xl md:text-6xl tracking-tightest font-medium text-charcoal leading-[1.05]">
               Let's start a 
               <br />
               conversation.
             </h2>
             <p className="mt-6 text-body leading-relaxed max-w-md">
-              Reach our concierge team directly. We respond personally, with
-              discretion and care.
+              Reach our concierge team directly.We are here to listen and
+get you started
             </p>
 
             <div className="mt-12 space-y-6">
@@ -43,7 +43,7 @@ export default function ContactSection() {
 
             <div className="mt-12">
               <Button variant="primary" size="lg" onClick={openBooking}>
-                Book Consultation
+                Book Appointment
                 <ArrowUpRight size={14} strokeWidth={1.5} />
               </Button>
             </div>

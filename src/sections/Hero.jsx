@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
 import Button from "../components/Button";
+import { QUICK_SHOT_URL } from "../lib/constants";
 import { openBooking } from "../lib/utils";
 import { Link } from "react-router-dom";
 import heroImage from "../assets/iv-therapy-hero.jpg";
@@ -40,7 +41,7 @@ export default function Hero() {
               className="inline-flex items-center gap-3 mb-8 text-brandGold"
             >
               <span className="h-px w-8 bg-brandGold" />
-              Concierge Longevity · Scottsdale
+              Concierge Longevity · Scottsdale, AZ
             </motion.div>
 
             <motion.h1
@@ -51,11 +52,14 @@ export default function Hero() {
                 ease: [0.22, 1, 0.36, 1],
                 delay: 0.1,
               }}
-              className="text-[42px] sm:text-6xl md:text-7xl lg:text-[78px] xl:text-[92px] leading-[0.98] tracking-tightest text-charcoal font-medium"
-            >
-              Feel Better.
-              <br />
-              Live <em className="not-italic text-eucalyptus font-light">Longer.</em>
+               className="text-[42px] sm:text-6xl md:text-7xl lg:text-[78px] xl:text-[92px] leading-[0.98] tracking-tightest text-charcoal font-normal"
+>
+  Feel Better.
+  <br />
+  Live{" "}
+  <span className="text-eucalyptus font-semibold">
+    Longer.
+  </span>
             </motion.h1>
 
             <motion.p
@@ -84,9 +88,9 @@ export default function Hero() {
               <Button
                 variant="primary"
                 size="lg"
-                onClick={openBooking}
+                onClick={() => openBooking(QUICK_SHOT_URL)}
               >
-                Book Consultation
+                Book Appointment
                 <ArrowUpRight size={16} strokeWidth={1.5} />
               </Button>
 

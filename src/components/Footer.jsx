@@ -25,7 +25,7 @@ export default function Footer() {
               </div>
             </Link>
             <p className="mt-6 text-sm text-body max-w-md leading-relaxed">
-              Concierge longevity medicine in Scottsdale. Cutting-edge
+              Concierge longevity medicine in Scottsdale, AZ. Cutting-edge
               diagnostics and personalized protocols engineered to extend your
               healthspan.
             </p>

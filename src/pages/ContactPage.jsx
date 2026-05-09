@@ -116,7 +116,9 @@ export default function ContactPage() {
                 Looking for clinicians who believe patients deserve more.
               </h2>
               <p className="body mt-3 max-w-xl">
-                We’re  seeking registered nurses, physician assistants, and nurse practitioners with a background in longevity and regenerative medicine.
+                We are seeking registered nurses, physician assistants, and nurse
+practitioners with a background in longevity and regenerative medicine and who are
+passionate to bring positive change to the patients we serve.
               </p>
             </div>
 

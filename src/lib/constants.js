@@ -1,5 +1,10 @@
 export const BOOKING_URL =
   "https://app.acuityscheduling.com/schedule.php?owner=39145070&ref=booking_button";
+  export const QUICK_SHOT_URL =
+  "https://app.acuityscheduling.com/schedule.php?owner=39145070&appointmentType=category:QUICK-STOP%20BOOSTER%20SHOTS";
+
+export const MEMBERSHIP_URL =
+  "https://app.acuityscheduling.com/schedule/3d1ba793/appointment/92329131/calendar/13986440?appointmentTypeIds[]=92329131";
 
 export const NAV_LINKS = [
   { label: "Home", to: "/" },

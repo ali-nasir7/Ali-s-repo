@@ -1,65 +1,106 @@
 import { motion } from 'framer-motion'
+import { useEffect, useState } from 'react'
 
-const MESSAGE = 'We are hiring clinical team members — please see the Contact section'
-const REPEAT = 8
+const MESSAGE = ' We’re hiring clinical team members — Apply via Contact section'
+const REPEAT = 6
 
 export default function MarqueeBanner() {
+  const [isMobile, setIsMobile] = useState(false)
+
+  useEffect(() => {
+    const checkScreen = () => {
+      setIsMobile(window.innerWidth < 768)
+    }
+    checkScreen()
+    window.addEventListener('resize', checkScreen)
+    return () => window.removeEventListener('resize', checkScreen)
+  }, [])
+
   return (
     <div
       style={{
         position: 'sticky',
-        top: '80px', // navbar height
+        top: '80px',
         zIndex: 49,
         width: '100%',
         overflow: 'hidden',
-        borderBottom: '1px solid rgba(31,41,55,0.07)',
-        backgroundColor: 'rgba(245,244,239,0.92)',
-        backdropFilter: 'blur(12px)',
-        WebkitBackdropFilter: 'blur(12px)',
-        paddingTop: '9px',
-        paddingBottom: '9px',
+        borderBottom: '1px solid rgba(0,0,0,0.06)',
+
+        // 🔥 Luxury soft gradient background
+        background: 'linear-gradient(to right, #F5F4EF, #F8F6F1)',
+
+        backdropFilter: 'blur(10px)',
+        WebkitBackdropFilter: 'blur(10px)',
+        padding: '12px 0',
       }}
     >
-      <motion.div
-        style={{ display: 'flex', whiteSpace: 'nowrap' }}
-        animate={{ x: ['0%', '-50%'] }}
-        transition={{
-          duration: 15,
-          ease: 'linear',
-          repeat: Infinity,
-        }}
-      >
-        {Array.from({ length: REPEAT }).map((_, i) => (
-          <span
-            key={i}
-            style={{
-              display: 'inline-flex',
-              alignItems: 'center',
-              gap: '1.2rem',
-              paddingRight: '3.5rem',
-              fontSize: '10px',
-              letterSpacing: '0.24em',
-              textTransform: 'uppercase',
-              fontWeight: 300,
-              color: '#B8977E',
-              fontFamily: 'Inter, sans-serif',
-            }}
-          >
-            {MESSAGE}
+      {isMobile ? (
+        // ✅ Mobile version (no animation - better UX)
+        <div
+          style={{
+            textAlign: 'center',
+            fontSize: '14px',
+            fontWeight: 500,
+            color: '#C9A35A',
+            fontFamily: 'Inter, sans-serif',
+            padding: '0 16px',
+          }}
+        >
+          {MESSAGE}
+        </div>
+      ) : (
+        // ✅ Desktop marquee
+        <motion.div
+          style={{
+            display: 'flex',
+            whiteSpace: 'nowrap',
+          }}
+          animate={{ x: ['0%', '-50%'] }}
+          transition={{
+            duration: 25, // 👈 slow & readable
+            ease: 'linear',
+            repeat: Infinity,
+          }}
+          whileHover={{
+            animationPlayState: 'paused', // 🧠 UX upgrade
+          }}
+        >
+          {Array.from({ length: REPEAT }).map((_, i) => (
             <span
+              key={i}
               style={{
-                display: 'inline-block',
-                width: '3px',
-                height: '3px',
-                borderRadius: '50%',
-                backgroundColor: '#B8977E',
-                flexShrink: 0,
-                opacity: 0.5,
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: '1.5rem',
+                paddingRight: '4rem',
+
+                // ✅ Readability improved
+                fontSize: '14px',
+                letterSpacing: '0.08em',
+                fontWeight: 500,
+
+                // 🎯 Logo matching gold color
+                color: '#C9A35A',
+
+                fontFamily: 'Inter, sans-serif',
               }}
-            />
-          </span>
-        ))}
-      </motion.div>
+            >
+              {MESSAGE}
+
+              {/* Elegant separator dot */}
+              <span
+                style={{
+                  width: '5px',
+                  height: '5px',
+                  borderRadius: '50%',
+                  backgroundColor: '#C9A35A',
+                  opacity: 0.7,
+                }}
+              />
+            </span>
+          ))}
+        </motion.div>
+      )}
     </div>
   )
 }

@@ -76,17 +76,17 @@ export default function ServicesPage() {
             }}
             className="max-w-3xl"
           >
-            <div className="label text-eucalyptus mb-5">
+            <div className="label text-eucalyptus !text-xl mb-5">
               Our Services
             </div>
 
-            <h1 className="text-5xl md:text-7xl tracking-tightest font-medium text-charcoal leading-[1.02]">
-              IV Therapy. Reimagined as ritual.
-            </h1>
+            {/* <h1 className="text-5xl md:text-7xl tracking-tightest font-medium text-charcoal leading-[1.02]">
+        .
+            </h1> */}
 
-            <p className="mt-8 text-body text-lg leading-relaxed max-w-2xl">
-              Personalized treatments designed for your long-term wellness journey. Begin with the questionnaire below to find your match, or explore our signature pillars below.
-            </p>
+            <p className="mt-8 text-body text-lg leading-relaxed max-w-2xl font-semibold">
+  Personalized treatments designed for your long-term wellness journey. Begin with the questionnaire below to find your match, or explore our signature pillars below.
+</p>
           </motion.div>
         </div>
       </section>

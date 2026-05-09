@@ -10,7 +10,7 @@ const TESTIMONIALS = [
   {
     quote:
       "The diagnostics revealed what years of routine bloodwork never had. My energy and focus have transformed.",
-    name: "Dr. R. Vance",
+    name: "Brittany J.",
     role: "Member · Paradise Valley",
   },
   {
@@ -26,11 +26,11 @@ export default function Testimonials() {
     <section className="relative">
       <div className="mx-auto max-w-[1440px] px-6 md:px-10 lg:px-16 py-24 md:py-32">
         <div className="text-center mb-16">
-          <div className="label text-eucalyptus mb-5 tracking-editorial">
-            Voices of Care
+          <div className="label text-eucalyptus !text-xl mb-5 tracking-editorial">
+            Testimonials
           </div>
           <h2 className="text-4xl md:text-6xl tracking-tightest font-medium text-charcoal leading-[1.05]">
-            The Patient Journey.
+            
           </h2>
           <p className="mt-6 text-body max-w-xl mx-auto leading-relaxed">
             Reflecting on experiences of precision, empathy, and restoration.
@@ -57,7 +57,7 @@ export default function Testimonials() {
                     : "p-10 md:p-11"
                 }`}
               >
-                {/* faint eucalyptus leaf overlay */}
+                {/* faint eucalyptus leaf overlay
                 <svg
                   aria-hidden
                   viewBox="0 0 60 60"
@@ -77,7 +77,7 @@ export default function Testimonials() {
                     stroke="#7A9D96"
                     strokeWidth="0.7"
                   />
-                </svg>
+                </svg> */}
 
                 <div className="text-eucalyptus text-5xl leading-none font-light mb-6">
                   &ldquo;

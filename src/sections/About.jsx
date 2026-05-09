@@ -30,11 +30,9 @@ export default function About() {
     <section id="about" className="relative scroll-mt-24">
       <div className="mx-auto max-w-[1440px] px-6 md:px-10 lg:px-16 py-24 md:py-32">
         <div className="max-w-2xl mb-20">
-          <div className="label text-eucalyptus mb-5">The Practitioners</div>
+          <div className="label text-eucalyptus !text-xl mb-5">The Practitioners</div>
           <h2 className="text-4xl md:text-6xl tracking-tightest font-medium text-charcoal leading-[1.05]">
-            Trusted authority
-            <br />
-            Profound care.
+            Trusted authority And a Profound care.
           </h2>
         </div>
 

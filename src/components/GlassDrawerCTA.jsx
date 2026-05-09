@@ -1,13 +1,8 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Calendar, X } from "lucide-react";
+import { Calendar, X, Activity } from "lucide-react"; // 👈 IV icon added
 import { openBooking } from "../lib/utils";
 
-/**
- * Floating glass drawer CTA — a small glass button anchored bottom-right.
- * Click opens an elegant side panel with quick booking + contact options.
- * Does NOT navigate away.
- */
 export default function GlassDrawerCTA() {
   const [open, setOpen] = useState(false);
 
@@ -19,8 +14,9 @@ export default function GlassDrawerCTA() {
         aria-label="Quick booking"
         className="fixed z-40 bottom-6 right-6 md:bottom-8 md:right-8 glass px-5 py-3 text-charcoal text-[12px] font-medium tracking-tight inline-flex items-center gap-2 hover:-translate-y-[2px] transition-transform duration-500 ease-luxe rounded-full"
       >
+        <Activity size={14} className="text-eucalyptus" /> {/* 👈 IV emblem */}
         <span className="h-1.5 w-1.5 rounded-full bg-eucalyptus animate-pulse" />
-        Concierge
+        Contact Concierge
       </button>
 
       <AnimatePresence>
@@ -34,6 +30,7 @@ export default function GlassDrawerCTA() {
               onClick={() => setOpen(false)}
               className="fixed inset-0 z-40 bg-charcoal/30 backdrop-blur-sm"
             />
+
             <motion.aside
               initial={{ x: "100%" }}
               animate={{ x: 0 }}
@@ -42,8 +39,14 @@ export default function GlassDrawerCTA() {
               className="fixed z-50 top-0 right-0 h-full w-full sm:max-w-md bg-ice border-l border-charcoal/10 shadow-glass"
             >
               <div className="h-full flex flex-col">
+
+                {/* Header */}
                 <div className="flex items-center justify-between p-6 border-b border-charcoal/10">
-                  <div className="label text-charcoal/70">Concierge</div>
+                  <div className="label text-charcoal/70 flex items-center gap-2">
+                    <Activity size={14} className="text-eucalyptus" /> {/* 👈 IV icon */}
+                    Contact Concierge {/* 👈 wording updated */}
+                  </div>
+
                   <button
                     onClick={() => setOpen(false)}
                     aria-label="Close"
@@ -52,10 +55,13 @@ export default function GlassDrawerCTA() {
                     <X size={20} strokeWidth={1.5} />
                   </button>
                 </div>
+
+                {/* Content */}
                 <div className="p-8 flex-1 overflow-y-auto">
                   <h3 className="text-3xl tracking-tightest font-medium text-charcoal leading-[1.1]">
                     A private path to longevity.
                   </h3>
+
                   <p className="mt-4 text-body leading-relaxed">
                     Begin with a complimentary discovery conversation. Our team
                     will guide you toward the protocol best matched to your
@@ -75,6 +81,7 @@ export default function GlassDrawerCTA() {
                           30 min · Concierge intake
                         </div>
                       </div>
+
                       <Calendar
                         size={18}
                         className="text-eucalyptus shrink-0"
@@ -107,11 +114,14 @@ export default function GlassDrawerCTA() {
                     </a>
                   </div>
                 </div>
+
+                {/* Footer */}
                 <div className="p-6 border-t border-charcoal/10">
                   <div className="label text-charcoal/50">
                     LivLong MD · Scottsdale
                   </div>
                 </div>
+
               </div>
             </motion.aside>
           </>

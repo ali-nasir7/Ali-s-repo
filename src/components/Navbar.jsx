@@ -57,11 +57,11 @@ export default function Navbar() {
 
     {/* Company Name + Tagline */}
     <div className="flex flex-col leading-tight">
-      <span className="text-charcoal tracking-tightest font-semibold text-[15px] md:text-[16px]">
+      <span className="text-charcoal tracking-tightest font-semibold !text-lg text-[15px] md:text-[16px]">
         LivLong MD
       </span>
 
-      <span className="label text-[9px] md:text-[10px] !text-brandGold mt-0.5">
+      <span className="label text-[9px] md:text-[10px]  !text-brandGold mt-0.5">
         Live Well Long
       </span>
     </div>
@@ -103,7 +103,7 @@ export default function Navbar() {
               className="hidden md:inline-flex"
               onClick={openBooking}
             >
-              Book Consultation
+              Book Appointment
             </Button>
             <button
               className="md:hidden p-2 -mr-2 text-charcoal"

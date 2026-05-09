@@ -105,7 +105,7 @@ export default function Questionnaire() {
     >
       <div className="mx-auto max-w-5xl px-6 md:px-10 lg:px-16 py-24 md:py-32">
         <div className="text-center mb-14">
-          <div className="label mb-5 text-eucalyptus">Concierge Intake</div>
+          <div className="label mb-5 text-eucalyptus !text-xl">Concierge Intake</div>
           <h2 className="text-3xl md:text-5xl tracking-tightest font-medium text-charcoal">
             A protocol shaped to you.
           </h2>

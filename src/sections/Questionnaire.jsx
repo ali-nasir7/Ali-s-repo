@@ -4,6 +4,7 @@ import { ArrowLeft, ArrowRight, Sparkles, ArrowUpRight } from "lucide-react";
 import Button from "../components/Button";
 import { recommend, getProduct } from "../lib/recommend";
 import { openBooking } from "../lib/utils";
+import { BOOKING_URL } from "../lib/constants";
 
 const QUESTIONS = [
   {

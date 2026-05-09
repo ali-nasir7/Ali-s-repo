@@ -2,6 +2,7 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Calendar, X, Activity } from "lucide-react"; // 👈 IV icon added
 import { openBooking } from "../lib/utils";
+import { BOOKING_URL } from "../lib/constants";
 
 export default function GlassDrawerCTA() {
   const [open, setOpen] = useState(false);

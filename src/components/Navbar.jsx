@@ -169,9 +169,9 @@ export default function Navbar() {
                   variant="primary"
                   size="lg"
                   className="w-full"
-                  onClick={openBooking}
+                  onClick={() => openBooking(BOOKING_URL)}
                 >
-                  Book Consultation
+                  Book Appointment
                 </Button>
               </div>
             </div>

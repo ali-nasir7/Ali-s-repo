@@ -18,9 +18,8 @@ export default function Home() {
     <>
 
       <Hero />
-      <Questionnaire />
       <ServicesShowcase />
-      
+      <Questionnaire />
       <Process />
       <Membership />
       <Testimonials />

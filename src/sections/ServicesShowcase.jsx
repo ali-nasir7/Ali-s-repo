@@ -38,11 +38,11 @@ export default function ServicesShowcase() {
             }}
             className="lg:col-span-5"
           >
-            <div className="overflow-hidden rounded-3xl shadow-xl">
+            <div className="overflow-hidden rounded-3xl shadow-xl lg:h-full">
               <img
                 src={ivImage}
                 alt="IV Therapy"
-                className="w-full h-[320px] md:h-[420px] object-cover"
+               className="w-full h-[320px] md:h-[420px] lg:h-full lg:min-h-[420px] lg:max-h-[560px] object-cover object-center"
               />
             </div>
           </motion.div>

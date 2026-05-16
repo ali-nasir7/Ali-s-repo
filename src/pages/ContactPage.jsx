@@ -111,7 +111,7 @@ export default function ContactPage() {
           >
             {/* Left */}
             <div className="md:col-span-8">
-              <div className="label text-eucalyptus mb-3">We Are Hiring</div>
+              <div className="label text-eucalyptus !text-xl mb-3">We Are Hiring</div>
               <h2 className="text-2xl md:text-3xl font-medium text-charcoal tracking-tight leading-snug">
                 Looking for clinicians who believe patients deserve more.
               </h2>

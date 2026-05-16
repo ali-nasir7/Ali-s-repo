@@ -61,13 +61,16 @@ export default function Process() {
       <div className="container-lux max-w-6xl mx-auto px-4 md:px-8">
 
         {/* Heading alignment fixed */}
-        <div className="text-center md:text-left !text-xl">
-          <SectionHeading
-            eyebrow="The Process"
-            title="Six movements toward a longer, fuller life."
-            sub="A design as deliberate as the outcome it produces."
-          />
-        </div>
+      {/* Replace the SectionHeading component with this */}
+<div className="text-center md:text-left">
+  <div className="label text-eucalyptus !text-xl mb-5">The Process</div>
+  <h2 className="text-2xl md:text-3xl tracking-tightest font-medium text-charcoal leading-[1.05]">
+    Six movements toward a longer, fuller life.
+  </h2>
+  <p className="mt-4 text-sm md:text-base text-body">
+    A design as deliberate as the outcome it produces.
+  </p>
+</div>
 
         {/* Main layout */}
         <div className="relative mt-20 md:mt-24 flex gap-6 md:gap-8">

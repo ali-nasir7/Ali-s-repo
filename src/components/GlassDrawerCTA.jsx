@@ -1,8 +1,9 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Calendar, X, Activity } from "lucide-react"; // 👈 IV icon added
+import { Calendar, X } from "lucide-react";
 import { openBooking } from "../lib/utils";
 import { BOOKING_URL } from "../lib/constants";
+import logo from "../assets/logo.png"; // 👈 update this path to wherever your logo asset lives
 
 export default function GlassDrawerCTA() {
   const [open, setOpen] = useState(false);
@@ -15,9 +16,9 @@ export default function GlassDrawerCTA() {
         aria-label="Quick booking"
         className="fixed z-40 bottom-6 right-6 md:bottom-8 md:right-8 glass px-5 py-3 text-charcoal text-[12px] font-medium tracking-tight inline-flex items-center gap-2 hover:-translate-y-[2px] transition-transform duration-500 ease-luxe rounded-full"
       >
-        <Activity size={14} className="text-eucalyptus" /> {/* 👈 IV emblem */}
+        <img src={logo} alt="LivLong MD" className="w-4 h-4 object-contain" />
         <span className="h-1.5 w-1.5 rounded-full bg-eucalyptus animate-pulse" />
-        Contact Concierge
+        Contact us
       </button>
 
       <AnimatePresence>
@@ -44,8 +45,8 @@ export default function GlassDrawerCTA() {
                 {/* Header */}
                 <div className="flex items-center justify-between p-6 border-b border-charcoal/10">
                   <div className="label text-charcoal/70 flex items-center gap-2">
-                    <Activity size={14} className="text-eucalyptus" /> {/* 👈 IV icon */}
-                    Contact Concierge {/* 👈 wording updated */}
+                    <img src={logo} alt="LivLong MD" className="w-4 h-4 object-contain" />
+                    Contact Concierge
                   </div>
 
                   <button
@@ -60,7 +61,7 @@ export default function GlassDrawerCTA() {
                 {/* Content */}
                 <div className="p-8 flex-1 overflow-y-auto">
                   <h3 className="text-3xl tracking-tightest font-medium text-charcoal leading-[1.1]">
-                    A private path to longevity.
+                    A path to longevity.
                   </h3>
 
                   <p className="mt-4 text-body leading-relaxed">

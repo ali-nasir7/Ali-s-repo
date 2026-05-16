@@ -26,7 +26,7 @@ export const SERVICES = [
         id: "elite-longevity",
         title: "The Elite Longevity Drip",
         description:
-          "Our signature protocol. Advanced antioxidants, cellular co-factors, and rejuvenating compounds for those who optimize for healthspan.",
+          "Our signature product. Advanced antioxidants, cellular co-factors, and rejuvenating compounds for those who optimize for healthspan.",
         good_for: ["longevity", "performance", "cognition", "skin"],
       },
     ],

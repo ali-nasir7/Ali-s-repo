@@ -90,9 +90,9 @@ export default function ServicesPage() {
           </motion.div>
         </div>
       </section>
-
+ <Questionnaire />
       <ServicesShowcase />
-      <Questionnaire />
+     
     </>
   );
 }

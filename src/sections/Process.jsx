@@ -60,9 +60,8 @@ export default function Process() {
     <section ref={ref} className="section relative">
       <div className="container-lux max-w-6xl mx-auto px-4 md:px-8">
 
-        {/* Heading alignment fixed */}
-      {/* Replace the SectionHeading component with this */}
-<div className="text-center md:text-left">
+       
+<div className="text-left">
   <div className="label text-eucalyptus !text-xl mb-5">The Process</div>
   <h2 className="text-2xl md:text-3xl tracking-tightest font-medium text-charcoal leading-[1.05]">
     Six movements toward a longer, fuller life.

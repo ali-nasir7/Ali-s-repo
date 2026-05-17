@@ -57,7 +57,7 @@ export default function Membership() {
           <div className="md:col-span-6 md:col-start-7 flex items-end">
             <p className="text-body leading-relaxed text-base md:text-lg max-w-xl">
               Membership at LivLong MD is a private commitment between you and
-              our physicians — continuous, evolving care built on data, results, and trust..
+              our physicians, evolving care built on trust
             </p>
           </div>
         </div>

@@ -23,7 +23,7 @@ export default function MarqueeBanner() {
         style={{ display: 'flex', whiteSpace: 'nowrap' }}
         animate={{ x: ['0%', '-50%'] }}
         transition={{
-          duration: 40,       // 👈 very slow — fully readable
+          duration: 20,       // 👈 very slow — fully readable
           ease: 'linear',
           repeat: Infinity,
         }}

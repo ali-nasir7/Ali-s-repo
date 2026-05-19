@@ -18,8 +18,7 @@ export default function ContactSection() {
               conversation.
             </h2>
             <p className="mt-6 text-body leading-relaxed max-w-md">
-              Reach our concierge team directly.We are here to listen and
-get you started
+             Reach our concierge team directly. We are here to listen and get you started.
             </p>
 
             <div className="mt-12 space-y-6">

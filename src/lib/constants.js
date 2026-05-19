@@ -15,8 +15,8 @@ export const NAV_LINKS = [
 ];
 
 export const CONTACT = {
-  email: "LivLongMD@gmail.com",
-  phone: "480-648-4510",
+  email: "contact@livlongmd.com",
+  phone: "(480) 269-3165",
   address: ["8010 E. McDowell Rd", "Suite 209", "Scottsdale AZ 85257"],
   hours: [
     { day: "Mon — Fri", time: "9:00 AM — 6:00 PM" },

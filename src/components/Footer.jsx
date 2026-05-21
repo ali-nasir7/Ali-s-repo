@@ -85,7 +85,11 @@ export default function Footer() {
         <div className="hairline my-12" />
 
         <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-3 text-xs text-charcoal/50">
-          <div>© {new Date().getFullYear()} LivLong MD. All rights reserved.</div>
+        <div className="flex flex-wrap items-center gap-4">
+  <span>© {new Date().getFullYear()} LivLong MD. All rights reserved.</span>
+  <Link to="/legal" className="hover:text-charcoal transition-colors">Privacy Policy</Link>
+  <Link to="/legal" className="hover:text-charcoal transition-colors">Terms & Conditions</Link>
+</div>
           <div className="label">Concierge Longevity · Scottsdale, AZ</div>
         </div>
       </div>

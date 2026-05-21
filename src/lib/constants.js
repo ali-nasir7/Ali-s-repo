@@ -12,6 +12,7 @@ export const NAV_LINKS = [
   { label: "Membership", to: "/membership" },
   { label: "About", to: "/about" },
   { label: "Contact", to: "/contact" },
+  { label: "Terms & Conditions", to: "/legal" },
 ];
 
 export const CONTACT = {

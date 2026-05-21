@@ -12,10 +12,13 @@ import AboutPage from "./pages/AboutPage";
 import ContactPage from "./pages/ContactPage";
 import NotFound from "./pages/NotFound";
 import CareersPage  from "./pages/CareersPage";
+import LegalPage from './pages/LegalPage'
 
 export default function App() {
   const [loading, setLoading] = useState(true);
   const location = useLocation();
+
+
 
   // Lock scroll while preloader is visible
   useEffect(() => {
@@ -51,6 +54,7 @@ export default function App() {
                 <Route path="/about" element={<AboutPage />} />
                 <Route path="/contact" element={<ContactPage />} />
                 <Route path="/careers" element={<CareersPage />} />
+                  <Route path="/legal" element={<LegalPage />} />
                 <Route path="*" element={<NotFound />} />
               </Routes>
             </motion.div>

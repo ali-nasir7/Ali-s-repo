@@ -173,7 +173,7 @@ Known for her compassionate bedside manner and attention to detail, Melissa is d
     spec: "Longevity Expert · Functional & Regenerative Medicine",
     image: "/resources/umarphoto.png",
     animatePhoto: true,
-    bio: `Dr. Umar Iqbal is the Medical Director of LivLong MD, where he bridges high-level clinical expertise with a science-meets-soul philosophy. A Board-Certified Physician specializing in hormone optimization, longevity, and environmental medicine, Dr. Iqbal moves beyond symptom management to address the root causes of metabolic imbalance.
+    bio: `Dr. Umar Iqbal is the Medical Director of LivLong MD, where he bridges high-level clinical expertise with a science-meets-soul philosophy. A Board-Certified Physician specializing in a Board-Certified Physician with expertise in longevity, wellness, hormone optimization and regenerative medicine, Dr. Iqbal moves beyond symptom management to address the root causes of mitochondrial dysfunction and metabolic imbalance.
 
 Central to his practice is a rigorous, data-driven approach that utilizes advanced diagnostics and biomarkers to craft precise, personalized roadmaps for health. By integrating quantitative insights with a passion for non-toxic living and restorative healing, he empowers patients to protect neuroendocrine function and achieve lasting physical and mental excellence.`,
   },

@@ -99,7 +99,7 @@ export default function GlassDrawerCTA() {
                         Email our team
                       </div>
                       <div className="text-xs text-body mt-1">
-                        LivLongMD@gmail.com
+                        contact@livlongmd.com
                       </div>
                     </a>
 
@@ -108,10 +108,10 @@ export default function GlassDrawerCTA() {
                       className="block w-full glass p-5 hover:bg-white/40 transition-all duration-500 ease-luxe"
                     >
                       <div className="text-charcoal font-medium">
-                        Speak with concierge
+                        Text us now
                       </div>
                       <div className="text-xs text-body mt-1">
-                        480-648-4510 · 9–6 MST
+                        (480) 269-3165
                       </div>
                     </a>
                   </div>

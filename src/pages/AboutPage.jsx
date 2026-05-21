@@ -23,8 +23,7 @@ export default function AboutPage() {
               Medicine practiced with precision and care.
             </h1>
             <p className="mt-8 text-body text-lg leading-relaxed max-w-2xl">
-              LivLong MD was founded on a single belief: that every patient deserves evidence-based medicine, delivered with the attention it requires
-            </p>
+             LivLong MD was founded on a single belief: that every patient deserves evidence-based medicine, delivered with the attention it requires - backed by our board certified physicians.            </p>
           </motion.div>
         </div>
       </section>

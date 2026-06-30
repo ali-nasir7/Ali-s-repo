@@ -72,7 +72,7 @@ export default function GlassDrawerCTA() {
 
                   <div className="mt-10 space-y-4">
                     <button
-                      onClick={openBooking}
+                       onClick={() => openBooking(BOOKING_URL)}
                       className="w-full flex items-center justify-between gap-4 glass p-5 hover:bg-white/40 transition-all duration-500 ease-luxe text-left"
                     >
                       <div>
@@ -92,7 +92,7 @@ export default function GlassDrawerCTA() {
                     </button>
 
                     <a
-                      href="mailto:LivLongMD@gmail.com"
+                      href="mailto:contact@livlongmd.com"
                       className="block w-full glass p-5 hover:bg-white/40 transition-all duration-500 ease-luxe"
                     >
                       <div className="text-charcoal font-medium">

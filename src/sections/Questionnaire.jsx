@@ -4,7 +4,7 @@ import { ArrowLeft, ArrowRight, Sparkles, ArrowUpRight } from "lucide-react";
 import Button from "../components/Button";
 import { recommend, getProduct } from "../lib/recommend";
 import { openBooking } from "../lib/utils";
-import { BOOKING_URL } from "../lib/constants";
+import { BOOKING_URL, QUICK_SHOT_URL } from "../lib/constants";
 
 const QUESTIONS = [
   {
@@ -215,10 +215,21 @@ export default function Questionnaire() {
                 <div className="hairline my-10" />
 
                 <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4">
-                  <Button variant="primary" size="lg" onClick={openBooking}>
-                    Book Now
-                    <ArrowUpRight size={14} strokeWidth={1.5} />
-                  </Button>
+                 <Button
+  variant="primary"
+  size="lg"
+  onClick={() =>
+    openBooking(
+      product.parentTitle?.toLowerCase().includes("booster") ||
+      product.title?.toLowerCase().includes("booster")
+        ? QUICK_SHOT_URL
+        : BOOKING_URL
+    )
+  }
+>
+  Book Now
+  <ArrowUpRight size={14} strokeWidth={1.5} />
+</Button>
                   <button
                     onClick={back}
                     className="inline-flex items-center gap-2 text-[13px] text-charcoal/60 hover:text-charcoal transition-colors"

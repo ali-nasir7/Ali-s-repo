@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
 import Button from "../components/Button";
-import { QUICK_SHOT_URL } from "../lib/constants";
+import { BOOKING_URL } from "../lib/constants";
 import { openBooking } from "../lib/utils";
 import { Link } from "react-router-dom";
 import heroImage from "../assets/iv-therapy-hero.jpg";
@@ -54,11 +54,14 @@ export default function Hero() {
               }}
                className="text-[42px] sm:text-6xl md:text-7xl lg:text-[78px] xl:text-[92px] leading-[0.98] tracking-tightest text-charcoal font-normal"
 >
-  Feel Better.
+  Live {" "}
+   <span className="text-eucalyptus font-semibold">
+   Well.
+     </span>
   <br />
-  Live{" "}
+  Age {" "}
   <span className="text-eucalyptus font-semibold">
-    Longer.
+    Well.
   </span>
             </motion.h1>
 
@@ -88,7 +91,7 @@ export default function Hero() {
               <Button
                 variant="primary"
                 size="lg"
-                onClick={() => openBooking(QUICK_SHOT_URL)}
+                onClick={() => openBooking(BOOKING_URL)}
               >
                 Book Appointment
                 <ArrowUpRight size={16} strokeWidth={1.5} />

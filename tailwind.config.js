@@ -7,6 +7,7 @@ export default {
         ice: "#F4F7F9",
         brandGold: "#C9A35A",
         brandBronze: "#6B3F1D",
+        eucalyptus: "#C9A35A",
         mist: "#D1DBE0",
         charcoal: "#2F3E46",
         charcoalSoft: "#354F52",
@@ -28,11 +29,10 @@ export default {
         tightest: "-0.03em",
         editorial: "0.18em",
       },
-      boxShadow: {
-        glass:
-          "0 40px 80px -15px rgba(47, 62, 70, 0.08), 0 0 20px rgba(122, 157, 150, 0.05)",
-        soft: "0 20px 50px -20px rgba(47, 62, 70, 0.10)",
-      },
+     boxShadow: {
+  glass: "0 40px 80px -15px rgba(22, 21, 19, 0.08), 0 0 20px rgba(201, 163, 90, 0.05)",
+  soft: "0 20px 50px -20px rgba(22, 21, 19, 0.10)",
+},
       backdropBlur: {
         xs: "2px",
       },

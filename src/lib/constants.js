@@ -49,30 +49,32 @@
 
 
 
-
 export const BOOKING_URL =
   "https://app.acuityscheduling.com/schedule.php?owner=39145070&ref=booking_button";
-  export const QUICK_SHOT_URL =
+export const QUICK_SHOT_URL =
   "https://app.acuityscheduling.com/schedule.php?owner=39145070&appointmentType=category:QUICK-STOP%20BOOSTER%20SHOTS";
 
 export const MEMBERSHIP_URL =
   "https://app.acuityscheduling.com/schedule/3d1ba793/appointment/92329131/calendar/13986440?appointmentTypeIds[]=92329131";
 
-// Peptide Therapy booking — update this to the dedicated Acuity
-// "Peptide Therapy" appointment-type/category link once it exists.
-// Falls back to the main booking link in the meantime.
-export const PEPTIDE_BOOKING_URL = BOOKING_URL;
+export const PEPTIDE_BOOKING_URL =
+  "https://app.acuityscheduling.com/schedule/3d1ba793/appointment/94670341/calendar/13986440?ref=booking_button";
 
-// AJAX form-submission endpoint (FormSubmit.co — no backend required).
-// First submission to a new email requires one manual confirmation click
-// from that inbox; every submission after that is delivered automatically.
 export const PEPTIDE_FORM_ENDPOINT =
   "https://formsubmit.co/ajax/contact@livlongmd.com";
 
+// NAV_LINKS supports optional `children` for dropdown/expandable sub-links.
+// Each child: { label, to }
 export const NAV_LINKS = [
   { label: "Home", to: "/" },
-  { label: "Services", to: "/services" },
-  { label: "Peptides", to: "/peptides" },
+  {
+    label: "Services",
+    to: "/services",
+    children: [
+      { label: "Peptide Therapy", to: "/services/peptide" },
+      { label: "IV Therapy",      to: "/services/iv-therapy" },
+    ],
+  },
   { label: "Membership", to: "/membership" },
   { label: "About", to: "/about" },
   { label: "Contact", to: "/contact" },

@@ -18,9 +18,9 @@ export default function Hero() {
         aria-hidden
         className="absolute inset-0 -z-10"
         style={{
-          background:
-            "radial-gradient(60% 60% at 20% 20%, rgba(122,157,150,0.18) 0%, rgba(244,247,249,0) 60%), radial-gradient(50% 60% at 90% 10%, rgba(209,219,224,0.55) 0%, rgba(244,247,249,0) 65%), linear-gradient(180deg, #F4F7F9 0%, #EAF1F1 100%)",
-        }}
+  background:
+    "radial-gradient(60% 60% at 20% 20%, rgba(201,163,90,0.12) 0%, rgba(245,243,238,0) 60%), radial-gradient(50% 60% at 90% 10%, rgba(218,215,204,0.45) 0%, rgba(245,243,238,0) 65%), linear-gradient(180deg, #F5F3EE 0%, #EDEAE2 100%)",
+}}
       />
 
       {/* Faint grain */}

@@ -2,20 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
+
 :root {
-  --ice: #f4f7f9;
+  --ice: #F5F3EE;          /* qova jaisa warm cream background */
+  --eucalyptus: #C9A35A;   /* gold — unchanged, logo se match */
+  --brand-gold: #C9A35A;   /* unchanged */
 
-  /* GREEN REPLACED WITH BRAND GOLD */
-  --eucalyptus: #C9A35A;
-  --brand-gold: #C9A35A;
-
-  --mist: #d1dbe0;
-  --charcoal: #2f3e46;
-  --charcoal-soft: #354f52;
-  --ink: #495e66;
-  --body: #52606d;
+  --mist: #DAD7CC;         /* warm neutral border/divider gray */
+  --charcoal: #161513;     /* near-black headings, qova jaisa */
+  --charcoal-soft: #2E2C27;
+  --ink: #4A4740;          /* h2/h3 text */
+  --body: #6F6D66;         /* body text, qova jaisa warm gray */
 }
-
 html,
 body,
 #root {
@@ -60,25 +58,25 @@ h3 {
 
 /* ---------- Glass card system ---------- */
 .glass {
-  background: rgba(235, 241, 245, 0.25);
+  background: rgba(240, 237, 230, 0.25);
   backdrop-filter: blur(18px) saturate(140%);
   -webkit-backdrop-filter: blur(18px) saturate(140%);
   border: 1px solid rgba(255, 255, 255, 0.5);
   border-top: 1.5px solid rgba(255, 255, 255, 0.8);
   border-left: 1.5px solid rgba(255, 255, 255, 0.8);
-  box-shadow: 0 40px 80px -15px rgba(47, 62, 70, 0.08),
+  box-shadow: 0 40px 80px -15px rgba(22, 21, 19, 0.08),
     0 0 20px rgba(201, 163, 90, 0.05);
   border-radius: 24px;
 }
 
 .glass-strong {
-  background: rgba(244, 247, 249, 0.55);
+  background: rgba(245, 243, 238, 0.55);
   backdrop-filter: blur(28px) saturate(160%);
   -webkit-backdrop-filter: blur(28px) saturate(160%);
   border: 1px solid rgba(255, 255, 255, 0.6);
   border-top: 1.5px solid rgba(255, 255, 255, 0.85);
   border-left: 1.5px solid rgba(255, 255, 255, 0.85);
-  box-shadow: 0 40px 80px -15px rgba(47, 62, 70, 0.08),
+  box-shadow: 0 40px 80px -15px rgba(22, 21, 19, 0.08),
     0 0 20px rgba(201, 163, 90, 0.05);
   border-radius: 24px;
 }
@@ -103,25 +101,17 @@ h3 {
 
 /* Subtle grain overlay */
 .grain::before {
-  content: "";
-  position: absolute;
-  inset: 0;
   background-image: radial-gradient(
-    rgba(47, 62, 70, 0.04) 1px,
+    rgba(22, 21, 19, 0.04) 1px,
     transparent 1px
   );
-  background-size: 3px 3px;
-  pointer-events: none;
-  opacity: 0.5;
 }
 
-/* Hairline divider */
 .hairline {
-  height: 1px;
   background: linear-gradient(
     90deg,
     transparent,
-    rgba(47, 62, 70, 0.18),
+    rgba(22, 21, 19, 0.18),
     transparent
   );
 }
